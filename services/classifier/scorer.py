@@ -1,18 +1,3 @@
-"""
-services/classifier/scorer.py
-──────────────────────────────
-Scores crawl results from crawl_results.jsonl.
-
-Key fixes vs v1:
-  1. Detects Cloudflare-intercepted pages — suppresses visual score
-     (screenshot is a CF challenge page, not the actual phishing page)
-  2. Deduplicates by URL before scoring
-  3. Overwrites scored_results.jsonl (no stacking on re-runs)
-  4. page_title used as a scoring signal
-  5. Brand keyword in path vs domain handled separately
-  6. Malware download URLs categorised separately
-"""
-
 import os
 import json
 import imagehash
