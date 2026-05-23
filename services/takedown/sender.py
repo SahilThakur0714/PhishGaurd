@@ -17,9 +17,9 @@ LOG_FILE    = os.path.join(DATA_DIR, 'takedown_log.jsonl')
 # Fill these in with your real Gmail details
 # For Gmail: go to myaccount.google.com → Security → App Passwords
 # Create an App Password and paste it below
-SENDER_EMAIL = "halfbloodprince0714@gmail.com"
-SENDER_PASS  = "fytg notq bvcn vpis"   # 16-char app password, NOT your Gmail password
-DRY_RUN      = False    # ← Change to False when you're ready to send real emails
+SENDER_EMAIL = "example@gmail.com"
+SENDER_PASS  = " "   # 16-char app password, NOT your Gmail password
+DRY_RUN      = True   # ← Change to False when you're ready to send real emails
 MIN_SCORE    = 30.0    # ← Lower threshold so we catch more sites
 # ────────────────────────────────────────────────────────
 
